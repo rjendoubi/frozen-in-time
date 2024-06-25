@@ -7,11 +7,11 @@ entries:
      long_description: >-
         Curriculum learning on the number of frames in pretraining achieves similar performance with significant reduction in compute (both memory and training time). This is because model has higher throughput for fewer frames, as well as allowing a bigger batch size for the same gpu memory. Our best model was trained on 1-frame then finetuned on 4-frames on CC+WebVid2M. Train on 1-frame until the training loss converges, then finetune on 4-frames with the same config, from the 1-frame checkpoint via setting load_checkpoint in config file. 4-frame finetuning needs much less iterations (~10% of 1-frame setting is sufficient) since most of the knowledge is learned in the 1-frame setting.
      image_path: >-
-        https://raw.githubusercontent.com/cloudera/Applied-ML-Prototypes/master/images/churn-prediction.jpg
+        https://raw.githubusercontent.com/rjendoubi/frozen-in-time/main/arch.jpg
      tags:
       - Churn Prediction
       - Logistic Regression
       - Explainability
       - Lime
-     git_url: "https://github.com/m-bain/frozen-in-time"
+     git_url: "https://github.com/rjendoubi/frozen-in-time"
      is_prototype: true
